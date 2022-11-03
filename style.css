@@ -13,6 +13,8 @@ a{
     color:inherit;
     border:inherit;
     font-family: inherit;
+    text-decoration: none;
+    border:none;
     background-color: transparent;
 }
 
@@ -20,26 +22,27 @@ body{
     height:100vh;
     color:white;
     font-family: 'Inter', sans-serif;
-    background-image: linear-gradient(to right, #00CC99, #6600FF);
+    background-color: #A1A5A8;
 }
 
 .container{
-    background: rgba( 255, 255, 255, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+ 
+    background-color: #E6E7EA;
     width:900px;
     margin:10% auto;
    
-    padding:40px;
+    padding:10px;
     text-align: center;
+    border-radius: 10px;
 }
 
 .fact{
- margin-top: 50px;
+ /* margin-top: 50px; */
  font-size: 30px;
+ color:#FCFFFE;
+ border-radius: 5px;
+ padding:20px;
+ background-color: #606975;
 }
 
 .author{
@@ -49,8 +52,15 @@ body{
 
 .btn, .tweet{
     border-radius: 10px;
+
   
-    background-size: 130%;
-    background-image: linear-gradient(to right,#00CC99, #6600FF);
-    padding:20px 25px;
+background: rgba( 255, 255, 255, 0.2 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 17px );
+-webkit-backdrop-filter: blur( 17px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding:10px 15px;
+    font-size: 20px;
+    font-weight: 500;
 }
