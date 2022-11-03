@@ -1,4 +1,5 @@
 const fact = document.querySelector('.fact')
+const qAuthor = document.querySelector('.author')
 const button = document.querySelector('.btn')
 
 const getQuote = async ()=>{
@@ -7,8 +8,13 @@ const getQuote = async ()=>{
     return json
 }
 
+
+
 button.addEventListener('click', ()=>{
-    getQuote().then(quote => fact.innerHTML = `<p>${quote.content} &mdash; ${quote.author}</p>`)
-})
-
-
+   getQuote().then(quotes => {
+      const quoteContent = quotes.content
+      const quoteAuthor = quotes.author;    
+      fact.textContent = quoteContent;
+     qAuthor.textContent = quoteAuthor;
+    });
+  });
