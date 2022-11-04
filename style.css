@@ -13,70 +13,94 @@ a{
     color:inherit;
     border:inherit;
     font-family: inherit;
+    font-weight: inherit;
     text-decoration: none;
     border:none;
     background-color: transparent;
 }
 
 body{
-    height:100vh;
-    color:white;
+   
+    color:#0F231D;
     font-family: 'Inter', sans-serif;
-    background-color: #111927;
-    background-image: 
-    radial-gradient(at 47% 33%, hsl(162.00, 77%, 40%) 0, transparent 59%), 
-    radial-gradient(at 82% 65%, hsl(243.20, 36%, 36%) 0, transparent 55%);
-
+    background-color: #FEF2E0;
 }
 
 .container{
-    backdrop-filter: blur(16px) saturate(180%);
-    -webkit-backdrop-filter: blur(16px) saturate(180%);
-    background-color: rgba(17, 25, 40, 0.75);
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.125);
-    width:600px;
-    margin:10% auto; 
-    border-radius: 10px;
-    padding:10px;  
-    text-align: center;
-    transition: all ease .5s;   
+ margin-top: 50px;
+ margin-left: 50px;
+ position: relative;
+ padding:30px;
+ width:100%;
+ height:90vh;
+ overflow-y:scroll;
 }
 
-.container:hover{
-    box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.125);  
-}
+
 
 .heading{
-    border-bottom: 1px solid rgba(255, 255, 255, 0.125);
+    border-bottom: 10px solid rgba(255, 255, 255, 0.125);
     padding-bottom: 20px;
 }
 
 
-.inner{
-    padding:20px;
-    border-radius: 10px;
-}
+
 
 .quote{
  margin:20px 0;
- font-size: 20px;
- color:#FCFFFE;
+ font-size: 90px;
+ font-weight: 500;
+ 
 }
 
 
 .author{
-    display: block;
-    margin:30px;
+ background-color: #0F231D;
+ color:#FEF2E0;
+width: fit-content;
+padding:10px 20px;
+text-transform: uppercase;  
+position: relative;
+}
+
+.author::before{
+position: absolute;
+content:'';
+color:#0F231D;
+height:10px;
+width: 10px;
+border:10px solid #FEF2E0;
+border-bottom: 10px solid;
+top:-20px;
+left:10px;
+}
+
+.buttons-container{
+    position: absolute;
+    bottom:30px;
+    width:90vw;
+    margin:20px 0 0 80px;
+    padding-top:20px;
+    border-top:5px solid #0F231D;
+    display: flex;
+    justify-content: space-between;
 }
 
 .btn, .tweet{
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.125);
-    padding:10px 15px;
+    border-radius: 30px;
+    border: 3px solid #FFAD26;
+    padding:15px 30px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.btn{
+    background-color: #FFAD26;
 }
 
 .btn:hover, .tweet:hover{
     background-color: rgba(255, 255, 255, 0.125);
     cursor:pointer;
 }
+
+

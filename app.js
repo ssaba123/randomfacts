@@ -16,8 +16,8 @@ tweet.addEventListener('click', ()=>{
 
 button.addEventListener('click', ()=>{
    getQuote().then(quotes => {
-      const quoteContent = quotes.content
-      const quoteAuthor = quotes.author;    
+      let quoteContent = quotes.content
+      let quoteAuthor = quotes.author; 
       fact.textContent = quoteContent;
       qAuthor.textContent = quoteAuthor;
      tweet.href = `https://twitter.com/intent/tweet?text="${quoteContent}"%0D%0A%2D%20${quoteAuthor}%0D%0A%0D%0A${message}`
