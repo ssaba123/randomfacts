@@ -1,4 +1,4 @@
-const fact = document.querySelector('.fact')
+const fact = document.querySelector('.quote')
 const qAuthor = document.querySelector('.author')
 const button = document.querySelector('.btn')
 const tweet = document.querySelector('.twitter')

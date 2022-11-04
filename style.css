@@ -35,22 +35,16 @@ body{
     background-color: rgba(17, 25, 40, 0.75);
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.125);
-
     width:600px;
-    margin:10% auto;
-   
-   border-radius: 10px;
-  
-    padding:10px;
-    
+    margin:10% auto; 
+    border-radius: 10px;
+    padding:10px;  
     text-align: center;
-    transition: all ease .5s;
-    
+    transition: all ease .5s;   
 }
 
 .container:hover{
-    box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.125);
-   
+    box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.125);  
 }
 
 .heading{
@@ -60,35 +54,28 @@ body{
 
 
 .inner{
-    /* background-color: #636D78; */
     padding:20px;
     border-radius: 10px;
 }
-.fact{
+
+.quote{
  margin:20px 0;
  font-size: 20px;
  color:#FCFFFE;
- 
- 
 }
-
 
 
 .author{
     display: block;
     margin:30px;
-
-
 }
 
 .btn, .tweet{
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.125);
-  
-   padding:10px 15px;
-  
-
+    padding:10px 15px;
 }
+
 .btn:hover, .tweet:hover{
     background-color: rgba(255, 255, 255, 0.125);
     cursor:pointer;
