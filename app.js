@@ -2,7 +2,7 @@ const fact = document.querySelector('.quote')
 const qAuthor = document.querySelector('.author')
 const button = document.querySelector('.btn')
 const tweet = document.querySelector('.twitter')
-const message = 'Tweeted via Random Quote Generator'
+const message = 'via Quote Generator by @codingoncode'
 
 const getQuote = async ()=>{
     const response = await fetch('https://api.quotable.io/random')
